@@ -26,7 +26,7 @@ def remover_medio(pila: Pila):
     total = len(pila)
 
     def rec(pila):
-        if len(pila) == total // 2:
+        if len(pila) - 1 == total // 2:
             pila.pop()
             return
 
@@ -40,16 +40,20 @@ def remover_medio(pila: Pila):
 p1 = Pila([1, 2, 3])
 p2 = Pila([1, 2, 3, 4])
 p3 = Pila([1, 2, 3, 4, 5])
+p4 = Pila([1, 2, 3, 4, 5, 6, 7])
 
 print(f"{p1 = }")
 print(f"{p2 = }")
 print(f"{p3 = }")
+print(f"{p4 = }")
 
 print("Removiendo valor medio...")
 remover_medio(p1)
 remover_medio(p2)
 remover_medio(p3)
+remover_medio(p4)
 
 print(f"{p1 = }")
 print(f"{p2 = }")
 print(f"{p3 = }")
+print(f"{p4 = }")

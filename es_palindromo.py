@@ -7,3 +7,5 @@ def es_palindromo(cadena: str):
 
 
 print(f"{es_palindromo('Anita lava la tina') = }")
+print(f"{es_palindromo('Ana lleva al oso la avellana') = }")
+print(f"{es_palindromo('Palindromo') = }")
